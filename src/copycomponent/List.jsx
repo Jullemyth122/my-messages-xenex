@@ -81,6 +81,7 @@ function List() {
         axios.delete('http://localhost:7777/starter/'+id)
             .then(res => console.log(res.data))
         setstarter(starter.filter(el => el._id !== id))
+        setfiltersearch(filtersearch.filter(el => el._id !== id))
     }
 
     const starterDeclarations = () => {
