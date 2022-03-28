@@ -1,0 +1,213 @@
+:root {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+@font-face {
+    font-family: 'Perfect Dark';
+    src: url(./assets/pdark.ttf);
+}
+
+.container {
+    display: block;
+}
+
+.sub-container {
+    padding: 50px;
+}
+
+.sub-container .owner {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-family: 'Perfect Dark';
+    font-size: 25px;
+}
+
+.sub-container .owner h2,.sub-container .owner h3 {
+    margin: 1em;
+    background-image: linear-gradient(to left, lightgray,gainsboro,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1000% 1000%;
+    animation: gradient 10s ease alternate infinite;
+}
+
+@keyframes gradient {
+
+    0% {             
+      background-position: 0% 50%;
+    }
+    
+    50% {
+      background-position: 100% 50%;
+    }              
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  
+  
+  }
+
+.send-messages {
+    display: block; 
+    width: 50%;
+    height: 300px;
+    padding: 10px;
+    margin: 1em;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 5px gray;
+    border: 1px solid gainsboro;
+
+}
+
+.send-messages .top,.send-messages .body,.send-messages .submit {
+    
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    
+}
+
+.send-messages .top input,.send-messages .top label {
+    margin: 0.5em;
+}
+
+.send-messages .top input {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid gainsboro;
+    background: transparent;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 40px 5px gray;
+
+}
+
+.send-messages .body textarea {
+    width: 70%;
+    background: transparent;
+    border: 1px solid gainsboro;
+    padding: 5px;
+    outline: none;
+    box-shadow: 0px 0px 40px 5px gray;
+    border-radius: 10px;
+
+}
+
+.send-messages .submit button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    cursor: pointer;
+    color: aliceblue;
+    background: transparent;
+    box-shadow: 0px 0px 40px 5px gray;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+.messages-list {
+    display: block; 
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    margin: 1em;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 5px gray;
+    border: 1px solid gainsboro;
+}
+
+.messages-list .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .title, .search-bar form {
+    margin: 0.5em;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar form input {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid gainsboro;
+    background: transparent;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 40px 5px gray;
+    
+}
+
+.search-bar form button {
+    width:40px;
+    height: 40px;
+    font-size:18px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    background: transparent;
+    border-radius: 10px;
+    color: gainsboro;
+    box-shadow: 0px 0px 40px 5px gray;
+    outline: none;
+}
+
+.search-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px 20px;
+    height: 900px;
+    overflow-y: auto;
+
+}
+
+.search-list::-webkit-scrollbar {
+    width: 15px;
+}
+.search-list::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+.search-list::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
+}
+
+.search-list .box {
+    /* width: auto; */
+    height: auto;
+    background: transparent;
+    border-radius: 10px;
+    color: gainsboro;
+    box-shadow: 0px 0px 10px 5px gray;
+    padding: 20px;
+    
+}
+
+.search-list .box .names {
+    margin: 1em;
+
+}
+
+.search-list .box .description {
+    margin: 1em;
+
+    width: 300px;
+    height: auto;
+}

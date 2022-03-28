@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const starterRouter = require('./routes/starter')
 
-const port = process.env.PORT || 7777
+const port = process.env.PORT || 9999
 
 app.use(cors());
 app.use(bodyParser.json());

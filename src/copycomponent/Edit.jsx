@@ -38,7 +38,7 @@ function Edit() {
 
     useEffect(() => {
         console.log(id)
-        axios.get('http://localhost:7777/starter/update/'+ id )
+        axios.get('http://localhost:9999/starter/update/'+ id )
             .then(res => {
                 setfullname(res.data.fullname)
                 setnickname(res.data.nickname)
@@ -63,7 +63,7 @@ function Edit() {
             weight:weight,
             date_birth:date_birth
         }
-        axios.put('http://localhost:7777/starter/update/'+ id,starter)
+        axios.put('http://localhost:9999/starter/update/'+ id,starter)
             .then(res => console.log(res.data))
             .catch(err => console.log('Error :' + err))
         

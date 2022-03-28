@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+nav ul {
+    display: flex;
+    background: grey;
+    width: auto;
+    height: auto;
+    margin: 1em;
+
+}
+
+nav ul .separate {
+    margin: auto;   display: flex;
+}
+nav ul li {
+    cursor: pointer;
+    width: 150px;
+    height: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    font-family: 'Jura', sans-serif;  font-size: 25px;
+    margin: 1em;
+    color: white;
+    box-shadow:  0 0 0 #ffffff,
+                 5px 5px 5px #575656,
+                  0px 0px 0px #ffffff inset,
+                  2px 2px 2px #ffffff inset;  
+}
+
+nav ul li:hover {
+  animation: item 2s forwards;
+}
+
+@keyframes item {
+  50% {
+    box-shadow:  10px 10px 10px #ffffff,
+                   10px 10px 10px #575656,
+                   0 0 0 #ffffff inset,
+                   0 0 0 #575656 inset;
+  }
+  100% {
+    box-shadow:  20px 20px 20px #666464,
+                   0 0 0 #575656,
+                   0 0 0 #ffffff inset,
+                   100px 100px 100px #575656 inset;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: 'Jura', sans-serif;  font-size: 25px;
+}
+
+.container {
+  background: black;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-container {
+    height: auto;
+    background: rgba(128, 128, 128, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.block form {
+  padding: 20px;
+  width: 420px;
+  height: 500px;
+}
+
+.block button {
+  padding: 10px;
+  font-family: 'Fjalla One', sans-serif;
+  background: rgb(80, 77, 77);
+  border: 1px solid gray;
+  color: whitesmoke;
+}
+
+.form-group {
+  height: 60px;
+  padding: 10px;
+  margin: 1em;
+  display: grid;
+  grid-template-columns: auto;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 17px;
+}
+
+.form-group .form-group-input {
+  width: 100%;
+  height: 20px;
+  padding: 5px;
+  margin: 0.5em;
+  border: 0px solid;
+  outline: none;
+}
+
+
+.options {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.options .option-click {
+  margin: auto;
+  font-family: 'Fjalla One', sans-serif;
+  cursor: pointer;
+}
+
+.main-prisoner { 
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:10px 10px;
+
+}
+
+.main-prisoner .box-2 {
+  width: 94%;
+  height: 1000px;
+  background: none;
+  box-shadow: 0px 0px 50px  15px rgba(213, 219, 213, 0.596);
+  padding: 10px;
+  margin: 1em;
+
+}
+
+.main-prisoner .top {
+  padding: 1em;
+  margin: 1em;
+  width: auto;
+  height: 20%;
+}
+.main-prisoner .top img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.main-prisoner .bottom {
+    width: auto;
+    height: 100%;
+    display: block;
+    
+
+}
+
+.main-prisoner .bottom .comments{
+    width: 100%;
+    height: 100px;
+    margin: 0.2em;
+}
+.main-prisoner .bottom .comments .add-comment h3 {
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    color: darkgray;
+}
+
+.main-prisoner .bottom .comments .add-comment .textfield{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    height: 100px;
+    width:auto;
+}
+.main-prisoner .bottom .comments .add-comment .textfield textarea{
+
+    width: 80%;
+    height: 25px;
+    padding: 5px;
+    border: 2px solid gray;
+    background: #575656;
+    outline: none;
+    font-size: 15px;
+    color: whitesmoke;
+
+}
+
+.main-prisoner .bottom .comments .add-comment .textfield button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background:none;
+    font-size: 18px;
+    color: whitesmoke;
+    width: 50px;
+    height: 50px;
+}
+
+.main-prisoner .bottom .comment-list{
+    width: auto;
+    height: 500px;
+    margin:1em;
+    align-items: center;
+    justify-content: center;
+    overflow:auto;
+
+}
+.main-prisoner .bottom .comment-list::-webkit-scrollbar {
+    width: 15px;
+}
+.main-prisoner .bottom .comment-list::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+.main-prisoner .bottom .comment-list::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
+}
+
+
+.main-prisoner .bottom .comment-list .ta {
+    display: flex;
+    width: auto;
+    background: transparent;
+    box-shadow: 0px 0px 40px  10px rgba(213, 219, 213, 0.596);
+    align-items: center;
+    justify-content: center;
+    margin: 0.2em;
+}
+
+.ta .tp {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+}
+.ta .tp .name {
+    color: rgb(60, 196, 60);
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ta .tp .comment-text {
+    color: gray;
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    word-break: break-word;
+}
+
+
+.ta .like-reply {
+    display: flex;
+}
+
+.like-reply .like,.like-reply .reply {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    font-size: 20px;
+   
+}
+
+.like-reply .like ion-icon,.like-reply .reply ion-icon {
+  cursor: pointer;
+}
